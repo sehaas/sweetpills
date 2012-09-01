@@ -2,7 +2,7 @@
 
 TMPDIR=".exiv2"
 OUTDIR="."
-PREVIEW="-preview2"
+PREVIEW="-preview3"
 SUFFIX="CR2"
 JPEGSUFFIX=".jpg"
 #MOGRIFY_PARAM="-quality 75 -resize 1200x1200"
@@ -39,7 +39,7 @@ do
 #	echo ${in_filename} " || " ${in_basename} " || " ${in_ext}
 	if [ "${in_ext}" == "${SUFFIX}" -a -f "${infile}" ]
 	then
-		exiv2 -ep2 -l "${TMPDIR}" "${infile}"
+		exiv2 -ep3 -l "${TMPDIR}" "${infile}"
 		jpegfile="${OUTDIR}/${in_basename}${JPEGSUFFIX}"
 		jpegprev="${TMPDIR}/${in_basename}${PREVIEW}${JPEGSUFFIX}"
 #		echo "${jpegprev}" -- "${jpegfile}"
