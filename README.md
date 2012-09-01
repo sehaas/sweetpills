@@ -4,6 +4,13 @@ sweet pills
 some helper scripts I wrote for my daily usage.
 
 
+Tools
+-----
+
+* cr2jpg.sh 
+extracts the JPG preview from Canonc CR2 files, resizes them to 2048x2048 max and populate the new image with all metainformation
+requires: exiv2, imagemagick, jhead
+
 
 License
 -------
